@@ -49,12 +49,12 @@ curl -L https://github.com/lullabot/drupal8ci/raw/master/setup-circleci.sh | bas
 
 Sign up at [CircleCI](https://circleci.com/) and allow access to your project's repository.
 
-![CircleCI watch](docs/images/circleci-watch.png)
+![CircleCI watch](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/circleci-watch.png)
 
 Happy CI-ing! :-D. From now every time you create a pull request, CircleCI will run the
 set of jobs and report their result like in the following screenshot:
 
-![CircleCI pull request](docs/images/circleci-pr.png)
+![CircleCI pull request](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/circleci-pr.png)
 
 For an overview of the CircleCI features, have a look at
 [this article from the Lullabot blog](https://www.lullabot.com/articles/continuous-integration-drupal-8-circleci).
@@ -85,7 +85,7 @@ dump somewhere. For example [the demo project uses a Dropbox URL](https://github
 via an environment variable which is set at the Circle CI web interface like in the following
 screenshot:
 
-![CircleCI database via environment variable](docs/images/circleci-db-env.png)
+![CircleCI database via environment variable](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/circleci-db-env.png)
 
 ##### 2. The production environment's files directory
 
@@ -103,17 +103,17 @@ curl -L https://github.com/lullabot/drupal8ci/raw/master/setup-travis-ci.sh | ba
 
 Sign up at [Travis CI](https://travis-ci.com/) and allow access to your project's repository:
 
-![Travis watch](docs/images/travis-watch.png)
+![Travis watch](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/travis-watch.png)
 
 Happy CI-ing! :-D. From now on every pull request will trigger a build in Travis and its
 progress will be visible like in the following screenshot:
 
-![Travis pull request](docs/images/travis-pr.png)
+![Travis pull request](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/travis-pr.png)
 
 For you to see the result of the individual jobs, you need to click at the Details link
 from the above screenshot:
 
-![Travis CI jobs](docs/images/travis-jobs.png)
+![Travis CI jobs](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/travis-jobs.png)
 
 #### Setting up code coverage reports
 
@@ -123,17 +123,17 @@ PHPUnit code coverage reports in a neat way within a pull request. Here is how t
 Register at https://coveralls.io using your GitHub account and then add your repository
 like in the following screenshot:
 
-![Coveralls add repository](docs/images/coveralls-add-repo.png)
+![Coveralls add repository](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/coveralls-add-repo.png)
 
 Then take the chance to adjust a couple settings to get cleaner feedback in pull
 requests:
 
-![Coveralls settings](docs/images/coveralls-settings.png)
+![Coveralls settings](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/coveralls-settings.png)
 
 That's it! Here is a sample report which you can see by clicking at Details
 at the pull request's status message:
 
-![Coveralls report](docs/images/coveralls-report.png)
+![Coveralls report](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/coveralls-report.png)
 
 #### Setting up the Behat job
 
@@ -150,7 +150,7 @@ dump somewhere and set up the environment variable so the job can download it. F
 [the demo project uses a Dropbox URL](https://github.com/juampynr/drupal8-travis-ci/blob/master/.travis/RoboFile.php#L89)
 via an environment variable referenced below:
 
-![Travis CI db env var](docs/images/travisci-db-var.png)
+![Travis CI db env var](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/travisci-db-var.png)
 
 ##### 2. The production environment's files directory
 
@@ -170,7 +170,7 @@ Review, commit, and push the resulting changes. After doing that, navigate to th
 at GitLab and open the CI / CD >> Pipelines section. You should see a running pipeline like
 the following one:
 
-![GitLab pipeline](docs/images/gitlab-pipeline.png)
+![GitLab pipeline](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/gitlab-pipeline.png)
 
 #### Database setup
 In order to build a Docker image with your project's database. Run the one-line installer mentioned
@@ -200,7 +200,7 @@ curl -L https://github.com/lullabot/drupal8ci/raw/master/setup-github-actions.sh
 Review, commit, and push the resulting changes. After doing that, navigate to the repository's homepage
 at GitHub and open the Actions tab. You should see a running workflow like the following one:
 
-![GitLab pipeline](docs/images/github-actions.png)
+![GitLab pipeline](https://raw.githubusercontent.com/tradeincool/drupal8ci/master/docs/images/github-actions.png)
 
 #### Database setup
 In order to build a Docker image with your project's database. Run the one-line installer mentioned
