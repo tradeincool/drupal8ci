@@ -28,7 +28,7 @@ RUN /tmp/composer-installer.sh
 RUN mv composer.phar /usr/local/bin/composer
 
 # Put a turbo on composer.
-RUN composer global require hirak/prestissimo
+#RUN composer global require hirak/prestissimo
 
 # Install XDebug.
 RUN pecl install xdebug \
@@ -39,7 +39,7 @@ RUN wget https://robo.li/robo.phar
 RUN chmod +x robo.phar && mv robo.phar /usr/local/bin/robo
 
 # Install Dockerize.
-ENV DOCKERIZE_VERSION v0.6.0
+ENV DOCKERIZE_VERSION v0.6.1
 RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
     && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
     && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
